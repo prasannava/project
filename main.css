@@ -1,0 +1,242 @@
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap');
+
+html, body{
+ font-family: 'Montserrat', sans-serif;
+ background-image:  url(apex1.jpg );
+ background-color: linear-gradient(
+    to bottom, rgba(42, 15, 194, 0.7) 0%,
+    #253141,
+    #253141 100%);
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+ height: 1000px;
+ width:100%;
+ 
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+header .left-menu{
+    display: flex;
+}
+header .left-menu .logo{
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    
+}
+header .left-menu .Menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+header .left-menu .Menu a{
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    padding: 0 10px;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+}
+header .left-menu .Menu a:hover{
+    color: rgba(255, 255, 255, 1);
+   
+}
+header .left-menu .Menu a .fa{
+   margin-left: 10px;
+   
+}
+
+header .right-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .right-menu .language{
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    padding: 0 40px 0 0;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+header .right-menu .language:hover{
+    color: rgba(255, 255, 255, 1);
+}
+header .right-menu .language .fa{
+    margin-left: 10px;
+   
+}
+header .right-menu .signin{
+   background: #0375d5;
+   border-radius: 4px;
+   padding: 10px 20px;
+   color: white;
+   text-transform: uppercase;
+   font-size: 10px;
+   font-weight: 700;
+}
+.container{
+   width: 800px;
+   margin: 0 auto;
+}
+.section-title{
+    font-size: 1.8rem;
+    color:white;
+    margin-bottom: 30px;
+}
+#featured{
+    padding: 50px 0 0;
+}
+#featured .videos-section{
+    display: grid;
+    grid-template-columns: 1fr 2fr 380px 2fr 1fr;
+    grid-gap: 10px;
+}
+#featured .videos-section .video{
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#featured .videos-section .video{
+    width: 100%;
+    height: 100%;
+    background: url("maxresdefault.jpg");
+    cursor: pointer;
+    
+}
+#featured .videos-section .video.center{
+    width: 380px;
+    height: 300px;
+    background: url("maxresdefault1.jpg");
+    background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+    transform: scale(1.05);
+    border: 2px solid #00b4f0;
+    }
+    #featured .videos-section .video:nth-child(1) .image,
+    #featured .videos-section .video:nth-child(5) .image,
+    {
+        position: relative;
+        }
+    #featured .videos-section .video:nth-child(1) .image .arrow,
+    #featured .videos-section .video:nth-child(5) .image .arrow{
+            position: relative;
+            background: lightblack;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            transition: all 0.2s ease-in-out;
+        }
+         #featured .videos-section .video:nth-child(1) .image .arrow:hover,
+         #featured .videos-section .video:nth-child(5) .image .arrow:hover{
+               background: rgba(0,0,0,0.8);
+                 
+              }
+         #featured .videos-section .video:nth-child(1) .image .arrow .fa,
+         #featured .videos-section .video:nth-child(5) .image .arrow .fa
+         {
+            font-size: 4rem;
+            color: #00b4f0;
+         }
+         #featured .dots
+         {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           padding: 30px;
+         }
+         #featured .dots .circles{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+         }
+         
+         #featured .dots .circles .circle{
+           width: 5px;
+           height: 5px;
+           border-radius: 50%;
+           background: white;
+           margin: 0 10px;
+           transition: all 0.2s ease-in-out;
+           }
+          #featured .dots .circles .circle:hover{
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #00b4f0;
+            margin: 0 10px;
+            
+           }
+          #featured .dots .circles .circle.active{
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #00b4f0;
+           }
+           #featured .dots .circles .circle.active:hover{
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: #00b4f0;
+           }
+           #top-games{
+               
+           }
+           #top-games .games{
+               display: grid;
+               grid-template-columns: repeat(6, 1fr);
+               grid-gap: 10px;
+               
+           }
+           #top-games .games .game{
+               background-image: url(cover.jpg);
+               background-position: top center;
+               background-repeat: no-repeat;
+               background-size: cover;
+               height: 200px;
+               border-radius: 5px;
+               position: relative;
+               -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.45);
+               -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.45);
+               box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.45);
+               overflow: hidden;
+               cursor: pointer;
+
+           }
+           #top-games .games .game .info{
+               background: #253041;
+               position: absolute;
+               bottom: 0;
+               width: 100%;
+               padding: 10px;
+               color: white;
+               transition: all 0.2s ease-in-out;
+           }
+           #top-games .games .game:hover .info{
+            background: #313f55;
+            }
+
+           #top-games .games .game .info .title{
+               font-weight: 600;
+               margin-bottom: 10px;
+           }
+           #top-games .games .game .info .views{
+            font-weight: 300;
+            color: gray;
+            font-size: 0.8rem;
+        }
+        #top-games .games .game .info .views .fa{
+            margin-right: 5px;
+        }
+         
+         
+
+
